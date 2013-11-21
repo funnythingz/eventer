@@ -1,1 +1,1 @@
-/// <reference path="../definitions/jquery.d.ts" />
+/// <reference path="../definitions/angular.d.ts" />

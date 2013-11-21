@@ -1,5 +1,8 @@
-var hello = "hello world";
+var helloApp = angular.module('helloApp', []);
 
-var $hoge = $('#hoge');
-
-console.log(hello);
+helloApp.controller('helloCtrl', function ($scope) {
+    console.log($scope);
+    $scope = {
+        greeting: { title: 'hoge', done: false }
+    };
+});
