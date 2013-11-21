@@ -1,8 +1,8 @@
 var helloApp = angular.module('helloApp', []);
 
 helloApp.controller('helloCtrl', function ($scope) {
-    console.log($scope);
-    $scope = {
-        greeting: { title: 'hoge', done: false }
+    $scope.greeting = {
+        title: "title",
+        lead: "lead text lead text lead text lead text lead text lead text "
     };
 });
