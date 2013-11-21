@@ -1,8 +1,8 @@
-var helloApp = angular.module('helloApp', []);
+var eventer = angular.module('eventer', []);
 
-helloApp.controller('helloCtrl', function ($scope) {
+eventer.controller('greetingCtrl', function ($scope) {
     $scope.greeting = {
-        title: "title",
-        lead: "lead text lead text lead text lead text lead text lead text "
+        title: "Eventer",
+        lead: "This is a simple event registration application ;)"
     };
 });
