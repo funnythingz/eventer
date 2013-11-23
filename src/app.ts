@@ -8,3 +8,6 @@ eventer.controller('greetingCtrl', ($scope) => {
         lead: "This is a simple event registration application ;)"
     }
 });
+
+eventer.controller('addEventCtrl', ($scope) => {
+});

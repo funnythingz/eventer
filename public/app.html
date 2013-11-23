@@ -2,6 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=10">
 <link rel="stylesheet" href="styles.css" media="all" type="text/css">
 <script src="angular.min.js"></script>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="bootstrap-datetimepicker.min.js"></script>
 <script src="app.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Kranky' rel='stylesheet' type='text/css'>
 </head><body>
@@ -26,6 +29,26 @@
       <label for="inputTitle" class="col-sm-2 control-label">Details</label>
       <div class="col-sm-10">
         <textarea class="form-control" rows="3" placeholder="Add more info"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputTitle" class="col-sm-2 control-label">When</label>
+      <div class="col-sm-10">
+        <div class="input-group" id="datetimepicker">
+          <input type="text" data-format="MM/dd/yyyy HH:mm:ss PP" class="form-control" class="input-append">
+          <span class="input-group-btn">
+            <button class="btn btn-default add-on" type="button">
+              <span class="glyphicon glyphicon-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></span>
+            </button>
+          </span>
+        </div><!-- /input-group -->
+        <script>
+        $('#datetimepicker').datetimepicker({
+          format: 'dd/MM/yyyy hh:mm:ss',
+          language: 'ja',
+          pick12HourFormat: true
+        });
+        </script>
       </div>
     </div>
     <div class="form-group">

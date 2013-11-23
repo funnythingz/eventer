@@ -4,7 +4,16 @@
 
 @import "bootstrap";
 @import "angular-csp";
+@import "bootstrap-datetimepicker";
 
 .logo {
   font-family: 'Kranky', cursive;
+}
+.bootstrap-datetimepicker-widget {
+  ul {
+    padding: 0;
+  }
+  .picker-switch {
+    min-height: 20px;
+  }
 }
