@@ -8,7 +8,15 @@ eventer.controller('greetingCtrl', function ($scope) {
 });
 
 eventer.controller('addEventCtrl', function ($scope) {
+    var exDatePrint = function () {
+        var nowDate = new Date();
+
+        return nowDate.getMonth() + '/' + nowDate.getDate() + '/' + nowDate.getFullYear() + ' 19:00 PM';
+    };
+
+    $scope.candidateDates = [{ value: exDatePrint() }];
+
     $scope.addCandidateDate = function () {
-        console.log('addCandidateDate');
+        $scope.candidateDates.push({ value: '' });
     };
 });

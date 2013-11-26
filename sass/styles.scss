@@ -17,3 +17,9 @@
     min-height: 20px;
   }
 }
+.spacing {
+    &:only-child {
+        margin-bottom: 0;
+    }
+    margin-bottom: 15px;
+}

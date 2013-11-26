@@ -10,7 +10,19 @@ eventer.controller('greetingCtrl', ($scope) => {
 });
 
 eventer.controller('addEventCtrl', ($scope) => {
+
+    var exDatePrint = () => {
+        var nowDate: Date = new Date();
+
+        return nowDate.getMonth()
+        + '/' + nowDate.getDate()
+        + '/' + nowDate.getFullYear()
+        +' 19:00 PM'
+    }
+
+    $scope.candidateDates = [{value: exDatePrint()}];
+
     $scope.addCandidateDate = () => {
-        console.log('addCandidateDate');
+        $scope.candidateDates.push({value: ''});
     }
 });
