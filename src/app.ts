@@ -10,4 +10,7 @@ eventer.controller('greetingCtrl', ($scope) => {
 });
 
 eventer.controller('addEventCtrl', ($scope) => {
+    $scope.addCandidateDate = () => {
+        console.log('addCandidateDate');
+    }
 });

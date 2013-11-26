@@ -8,4 +8,7 @@ eventer.controller('greetingCtrl', function ($scope) {
 });
 
 eventer.controller('addEventCtrl', function ($scope) {
+    $scope.addCandidateDate = function () {
+        console.log('addCandidateDate');
+    };
 });
