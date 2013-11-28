@@ -6,6 +6,10 @@
 @import "angular-csp";
 @import "bootstrap-datetimepicker";
 
+@import "partial/cassette";
+@import "partial/flexible";
+@import "partial/seemore";
+
 .logo {
   font-family: 'Kranky', cursive;
 }

@@ -1,0 +1,36 @@
+%_display {
+  display: table-cell;
+}
+
+@mixin wrap-icon($_size){
+  > .wrap-icon#{$_size} {
+    width: #{$_size + 5}px;
+    @extend %_display;
+    text-align: left;
+  }
+}
+
+.flexible {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  > .item {
+    @extend %_display;
+    vertical-align: top;
+    text-align: left;
+  }
+  > .item-space {
+    @extend %_display;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 8px;
+  }
+  > .item-helper {
+    @extend %_display;
+    vertical-align: middle;
+    text-align: right;
+    width: 18px;
+  }
+  @include wrap-icon(36);
+}
