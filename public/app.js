@@ -18,5 +18,13 @@ eventer.controller('addEventCtrl', function ($scope) {
 
     $scope.addCandidateDate = function () {
         $scope.candidateDates.push({ value: '' });
+        console.log(1);
+        setTimeout(function () {
+            $('.datetimepicker').datetimepicker();
+        }, 100);
     };
+
+    $(function () {
+        $('.datetimepicker').datetimepicker();
+    });
 });
